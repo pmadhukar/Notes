@@ -1,1 +1,5 @@
 //This file contains my notes on Multithreading in Java.
+
+1. Two basic ways of creating threads in Java:
+a. Extend Thread Class
+b. Implement Runnable interface
