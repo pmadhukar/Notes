@@ -2,4 +2,26 @@
 
 1. Two basic ways of creating threads in Java:
 a. Extend Thread Class
-b. Implement Runnable interface
+b. Implement Runnable interface and pass it to the constructor of the Thread class
+
+--check
+thread.start();
+thread.join();
+
+Executor Services : thread pool --Check
+
+
+Basic Thread Synchronization:
+If two or more thread sharing the same data, two problems may occur:
+1. Data being cached
+2. Thread interleaving
+
+
+Volatile keyword prevents from data being cached --Check
+private volatile boolean running;
+
+synchronized keyword to prevent interleaving
+
+Every object in Java has intrinsic lock/monitor lock/mutex --check
+
+It's not always ideal to have just one intrinsic lock...you may want multiple locks?? --check
