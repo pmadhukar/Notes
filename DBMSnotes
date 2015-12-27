@@ -1,0 +1,39 @@
+DDL
+========
+Data Definition Language.
+  Create  - To create objects in the database
+  Alter   - Alters the structure of the atabase
+  Drop    - Delete objects from the database
+  Truncate- Remove all records from a table, including all space allocated
+  Comment - Add comments to the data dictionary
+  Rename  - Rename an object
+  
+  
+DML
+========
+Data Manipulation Language.
+  Select  - Retrieve data from a table in database
+  Insert  - Insert data into a table
+  Update  - Updates the existing data within a table
+  Delete  - Deletes all records from a table, but doesn't delete the space allocated 
+  Merge   - UPSERT operation (Insert or update)
+  Call    - call a PL/SQL or Java subprogram
+  Explain Plan  - Explain access path to data
+  Lock Table - control concurrency
+  
+  
+  
+DCL
+=======
+Data Control Language (DCL)
+  Grant   - Gives users access privileges to database
+  Revoke  - Withdraw access privileges given with the GRANT command
+  
+  
+TCL
+========
+Transaction Control Language.
+  Commit  - save work done.
+  Savepoint - identify a point in a transaction to which you can later rollback
+  Rollback  - Restore database to original since the last commit
+  Set Transaction - Change transaction options like isolation level and what rollback segment to use
