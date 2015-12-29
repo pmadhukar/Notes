@@ -25,3 +25,13 @@ synchronized keyword to prevent interleaving
 Every object in Java has intrinsic lock/monitor lock/mutex --check
 
 It's not always ideal to have just one intrinsic lock...you may want multiple locks?? --check
+
+
+
+=============
+Producer Consumer
+BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(10);//creates an array of 10 ints
+BlockingQueue class is thread safe.
+
+queue.put(intValue); //Waits if queue is full
+queue.take(); //waits if queue is empty
