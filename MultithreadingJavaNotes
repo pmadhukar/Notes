@@ -35,3 +35,38 @@ BlockingQueue class is thread safe.
 
 queue.put(intValue); //Waits if queue is full
 queue.take(); //waits if queue is empty
+
+=================
+
+wait() and notify()
+
+wait() 
+- hands over the control of lock of synchronized block it's called in
+- method of object class. So use it with the object you're acquiring a lock with.
+- use wait(timeout) cause wait() can cause thread to wait indefinitely
+- wait() is more efficient than running a while loop which keeps checking a flag value
+- can call wait() only in synchronized code blocks/methods  --check
+
+
+notify()
+- can only be called from a synchronized code block/method
+- doesn't relinquish the lock like wait(). --check
+  lock will be relinquished only when the current threads execution is over.
+
+notifyall()
+
+
+
+============
+Q: Inheritance
+
+List<Integer> list = new LinkedList<Integer>();
+can list reference access methods which are defiend in LinkedList class but not in List class??
+Reason of this question:
+I can't use list.removeFirst();
+
+but if the object is like below:
+LinkedList<Integer> list = new LinkedList<Integer>();
+then I can use list.removeFirst();
+
+======
