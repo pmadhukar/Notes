@@ -70,3 +70,16 @@ LinkedList<Integer> list = new LinkedList<Integer>();
 then I can use list.removeFirst();
 
 ======
+Semaphores
+Semaphore sem = new Semaphore(10);
+sem.release();
+sem.acquire();
+
+
+ExecutorService executor = new Executors.newCachedThreadPool();
+executor.submit( new Runnable() { /*override run() method */ } );
+executor.shutdown();
+executor.awaitTermination(1, TimeUnit.DAYS);
+
+======
+Callable and Future
