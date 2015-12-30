@@ -83,3 +83,11 @@ executor.awaitTermination(1, TimeUnit.DAYS);
 
 ======
 Callable and Future
+
+
+
+==============
+Interrupting Threads
+2nd tutorial in series
+how to gracefully stop a thread using volatile boolean flag
+: probably the best way to stop a thread in Java
