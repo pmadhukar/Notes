@@ -1,0 +1,13 @@
+//Module: Object design: constructors, instance variables, methods
+//Core: Overloading methods
+
+methods can be overloaded as long as their signatures are different.
+signature = parameters and method name //not return type
+so to overload a method, we should provide different parameters. //because if overloading, method name will be same.
+
+//Following is not overloading
+//it's a compilation error
+//because parameter list is same, only return type differs
+//and return type is not considered as part of signature of the method
+public int someMethod(int a){...}
+public float someMethod(int a){...}
