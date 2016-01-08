@@ -11,3 +11,13 @@ so to overload a method, we should provide different parameters. //because if ov
 //and return type is not considered as part of signature of the method
 public int someMethod(int a){...}
 public float someMethod(int a){...}
+
+
+
+============
+Lesson 5 of 7
+Drawing memory models with primitive data:
+
+objective:
+1.Draw memory models for reasoning about variable values for primitive type data
+2.Update memory models to trace the state of the variables in Java code
